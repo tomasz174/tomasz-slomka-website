@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tomasz Slomka Property & Garden Services in Bognor Regis. Gardening, hedge cutting, fencing, painting, carpentry, patios and repairs.">
+<meta name="theme-color" content="#090909">
+<title>Tomasz Slomka | Property &amp; Garden Services</title>
+<style>
+:root{--gold:#f4bd24;--gold2:#ffdf73;--black:#090909;--panel:#151515;--muted:#c7c7c7}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--black);color:#fff;line-height:1.6}
+a{color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{background:rgba(7,7,7,.97);border-bottom:1px solid #46360e;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}
+.brand{text-decoration:none;font-weight:900;font-size:clamp(1.15rem,2.4vw,1.7rem);line-height:1.1}
+.brand span,h1 span,h2 span{color:var(--gold)}.brand small{display:block;color:#eee;font-size:.52em;letter-spacing:.2em;font-weight:500;margin-top:7px}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:18px}nav a{text-decoration:none;font-size:.93rem}nav a:hover{color:var(--gold)}
+.button{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:5px;background:var(--gold);color:#111;text-decoration:none;font-weight:800;border:1px solid var(--gold)}
+.button:hover{background:var(--gold2)}.button.outline{background:transparent;color:var(--gold)}
+.hero{background:radial-gradient(ellipse at 80% 30%,#48350b 0%,#19140a 25%,#090909 65%);border-bottom:1px solid #30240a}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:76px 0}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.19em;font-size:.8rem}
+h1{font-size:clamp(2.65rem,5.8vw,4.8rem);line-height:1.03;letter-spacing:-.04em;margin:14px 0 20px}
+.hero p{max-width:650px;color:#ddd;font-size:1.1rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-photo{width:100%;height:360px;object-fit:cover;border-radius:12px;border:1px solid #6b5012;box-shadow:0 20px 60px #0009}
+section{padding:72px 0}.section-head{max-width:760px;margin-bottom:30px}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:9px 0 13px}
+.section-head p,.muted{color:var(--muted)}.services{background:#101010;border-block:1px solid #241d0b}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,#1b1b1b,#101010);border:1px solid #332910;padding:23px;border-radius:8px}
+.icon{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--gold);color:#111;font-size:1.35rem;margin-bottom:13px}
+.card h3{margin:0 0 7px}.card p{color:var(--muted);margin:0;font-size:.96rem}
+.gallery-section{background:#0b0b0b}.filters{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 26px}
+.filter{border:1px solid #5a4613;background:#151515;color:#fff;padding:9px 13px;border-radius:30px;cursor:pointer;font:inherit;font-size:.9rem}
+.filter.active,.filter:hover{background:var(--gold);border-color:var(--gold);color:#111}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.gallery-card{margin:0;overflow:hidden;background:#151515;border:1px solid #302710;border-radius:8px}
+.gallery-card a{display:block;overflow:hidden;background:#222}.gallery-card img{display:block;width:100%;height:245px;object-fit:cover;transition:transform .25s}
+.gallery-card a:hover img{transform:scale(1.035)}
+.gallery-card figcaption{padding:13px 15px 16px}.gallery-card figcaption span{display:block;color:var(--gold);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.gallery-card figcaption strong{font-size:.96rem;font-weight:600}
+.about-grid,.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:42px;align-items:center}
+.gold-panel{min-height:260px;padding:28px;border-radius:9px;border:1px solid #6a5115;background:linear-gradient(135deg,#2b2108,#111 70%);display:flex;flex-direction:column;justify-content:end}
+.gold-panel strong{color:var(--gold);font-size:2.35rem;line-height:1.05}.gold-panel span{color:#ddd;margin-top:12px}
+.ticks{list-style:none;padding:0;margin:22px 0;display:grid;gap:9px}.ticks li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:10px}
+.contact{background:linear-gradient(130deg,#191407,#090909 55%);border-top:1px solid #49370c}
+.contact-grid{grid-template-columns:1fr 1fr;align-items:start}.contact-list{display:grid;gap:12px;margin-top:22px}
+.contact-item{display:flex;gap:13px;align-items:center;padding:14px;background:#111;border:1px solid #382b0d;border-radius:6px;text-decoration:none;overflow-wrap:anywhere}
+.contact-item b{display:block;color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}.contact-box{background:#111;border:1px solid #49370c;padding:25px;border-radius:8px}.contact-box p{color:var(--muted)}
+footer{padding:24px 0;color:#aaa;font-size:.85rem;border-top:1px solid #28200d}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.note{font-size:.86rem;color:#aaa;margin-top:24px}
+@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:54px 0;gap:25px}.hero-photo{height:280px}.cards,.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cards,.gallery{grid-template-columns:1fr}section{padding:54px 0}.gallery-card img{height:250px}}
+</style>
+<script>
+function filterGallery(category, button){
+  document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
+  button.classList.add('active');
+  document.querySelectorAll('.gallery-card').forEach(card=>{
+    card.style.display=(category==='All'||card.dataset.category===category)?'':'none';
+  });
+}
+</script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">TOMASZ <span>SLOMKA</span><small>PROPERTY &amp; GARDEN SERVICES</small></a>
+<nav aria-label="Main navigation"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a><a class="button" href="tel:07743999057">Call Now</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Bognor Regis &amp; surrounding areas</div>
+<h1>Property &amp; Garden Services, <span>Done Right.</span></h1>
+<p>Practical help for your home and garden. From hedge cutting and garden maintenance to fencing, painting, carpentry, paving and repairs — get in touch to discuss your job.</p>
+<div class="actions"><a class="button" href="tel:07743999057">☎ Call 07743 999057</a><a class="button outline" href="mailto:tomaszslomka269@gmail.com?subject=Property%20%26%20Garden%20Services%20Enquiry">Request a Quote</a></div>
+</div>
+<img class="hero-photo" src="images/charcoal-timber-fence.jpg" alt="Charcoal painted timber fence and gate">
+</div></section>
+<section class="services" id="services"><div class="wrap">
+<div class="section-head"><div class="eyebrow">What I can help with</div><h2>Services for your home <span>&amp; garden</span></h2><p>A range of practical services in and around Bognor Regis. If your job is not listed, just ask.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">❧</div><h3>Gardening &amp; Hedge Cutting</h3><p>Lawn care, hedge trimming, pruning and regular garden maintenance to keep outdoor spaces tidy.</p></article>
+<article class="card"><div class="icon">▤</div><h3>Fencing &amp; Gates</h3><p>Timber fencing, gates, repairs and painting to improve privacy and refresh your garden.</p></article>
+<article class="card"><div class="icon">▰</div><h3>Painting</h3><p>Interior and exterior painting to refresh rooms, fences and other suitable surfaces.</p></article>
+<article class="card"><div class="icon">⚒</div><h3>Carpentry &amp; Installations</h3><p>Practical timber projects, shelving, garden buildings, repairs and installations.</p></article>
+<article class="card"><div class="icon">▦</div><h3>Patios &amp; Landscaping</h3><p>Garden paths, lawn edges, paving and general outdoor improvements.</p></article>
+<article class="card"><div class="icon">➜</div><h3>Transport &amp; Deliveries</h3><p>Passenger transport, shopping collection, small-item transport, furniture collection and delivery, and help moving smaller items. Please ask about your requirements.</p></article>
+<article class="card"><div class="icon">⌂</div><h3>Property Repairs</h3><p>General repairs and restoration jobs around the home and garden. Contact me to discuss the work.</p></article>
+<article class="card"><div class="icon">✦</div><h3>Other Services</h3><p>Need help with something else? Get in touch and ask — I’ll let you know if I can help.</p></article>
+</div></div></section>
+<section class="gallery-section" id="gallery"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Real projects</div><h2>Work <span>Gallery</span></h2><p>A selection of real property and garden work. Select a photo to view it larger, or filter the gallery by type of work.</p></div>
+<div class="filters">
+<button class="filter active" onclick="filterGallery('All',this)">All projects</button>
+<button class="filter" onclick="filterGallery('Gardening',this)">Gardening &amp; lawns</button>
+<button class="filter" onclick="filterGallery('Hedge Cutting',this)">Hedge cutting</button>
+<button class="filter" onclick="filterGallery('Fencing',this)">Fencing</button>
+<button class="filter" onclick="filterGallery('Fencing & Painting',this)">Fencing &amp; painting</button>
+<button class="filter" onclick="filterGallery('Carpentry & Garden Buildings',this)">Carpentry &amp; garden buildings</button>
+<button class="filter" onclick="filterGallery('Carpentry',this)">Carpentry</button>
+<button class="filter" onclick="filterGallery('Carpentry & Installations',this)">Installations</button>
+<button class="filter" onclick="filterGallery('Patios & Paving',this)">Patios &amp; paving</button>
+<button class="filter" onclick="filterGallery('Patios & Outdoor Spaces',this)">Outdoor spaces</button>
+<button class="filter" onclick="filterGallery('Landscaping',this)">Landscaping</button>
+<button class="filter" onclick="filterGallery('Painting & Restoration',this)">Painting &amp; restoration</button>
+<button class="filter" onclick="filterGallery('Painting & Woodwork',this)">Woodwork</button>
+<button class="filter" onclick="filterGallery('Repairs & Restoration',this)">Repairs</button>
+<button class="filter" onclick="filterGallery('Gardening & Stonework',this)">Gardening &amp; stonework</button>
+</div>
+<div class="gallery">
+      <figure class="gallery-card" data-category="Carpentry &amp; Garden Buildings">
+        <a href="images/garden-shed-front.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber garden building with wooden doors">
+          <img src="images/garden-shed-front.jpg" alt="Timber garden building with wooden doors" loading="lazy">
+        </a>
+        <figcaption><span>Carpentry &amp; Garden Buildings</span><strong>Timber garden building with wooden doors</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Patios &amp; Outdoor Spaces">
+        <a href="images/patio-and-garden-furniture.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Patio and outdoor furniture beside a house">
+          <img src="images/patio-and-garden-furniture.jpg" alt="Patio and outdoor furniture beside a house" loading="lazy">
+        </a>
+        <figcaption><span>Patios &amp; Outdoor Spaces</span><strong>Patio with outdoor furniture</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Gardening">
+        <a href="images/striped-lawn.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Neatly striped lawn in a garden">
+          <img src="images/striped-lawn.jpg" alt="Neatly striped lawn in a garden" loading="lazy">
+        </a>
+        <figcaption><span>Gardening</span><strong>Lawn mowing with neat stripes</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Fencing">
+        <a href="images/two-tone-timber-fence.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber fence with dark painted framing and natural boards">
+          <img src="images/two-tone-timber-fence.jpg" alt="Timber fence with dark painted framing and natural boards" loading="lazy">
+        </a>
+        <figcaption><span>Fencing</span><strong>Timber fence with dark framing</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Carpentry &amp; Garden Buildings">
+        <a href="images/garden-log-store.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber log store with firewood">
+          <img src="images/garden-log-store.jpg" alt="Timber log store with firewood" loading="lazy">
+        </a>
+        <figcaption><span>Carpentry &amp; Garden Buildings</span><strong>Timber log store</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Patios &amp; Paving">
+        <a href="images/block-paving.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Block paving laid in a driveway or patio">
+          <img src="images/block-paving.jpg" alt="Block paving laid in a driveway or patio" loading="lazy">
+        </a>
+        <figcaption><span>Patios &amp; Paving</span><strong>Block paving</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Carpentry &amp; Garden Buildings">
+        <a href="images/garden-shed-side.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber garden shed with glazed door">
+          <img src="images/garden-shed-side.jpg" alt="Timber garden shed with glazed door" loading="lazy">
+        </a>
+        <figcaption><span>Carpentry &amp; Garden Buildings</span><strong>Timber garden shed</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Fencing">
+        <a href="images/timber-fence-natural-boards.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: New timber fence with natural boards and dark supports">
+          <img src="images/timber-fence-natural-boards.jpg" alt="New timber fence with natural boards and dark supports" loading="lazy">
+        </a>
+        <figcaption><span>Fencing</span><strong>New timber fencing</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Painting &amp; Restoration">
+        <a href="images/curved-wall-painting.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Curved garden wall with restoration patches">
+          <img src="images/curved-wall-painting.jpg" alt="Curved garden wall with restoration patches" loading="lazy">
+        </a>
+        <figcaption><span>Painting &amp; Restoration</span><strong>Restoration work on a curved garden wall</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Carpentry">
+        <a href="images/timber-frame-screenshot.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber frame construction shown in a phone screenshot">
+          <img src="images/timber-frame-screenshot.jpg" alt="Timber frame construction shown in a phone screenshot" loading="lazy">
+        </a>
+        <figcaption><span>Carpentry</span><strong>Timber frame construction</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Painting &amp; Woodwork">
+        <a href="images/timber-doors.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber doors and glazed panels">
+          <img src="images/timber-doors.jpg" alt="Timber doors and glazed panels" loading="lazy">
+        </a>
+        <figcaption><span>Painting &amp; Woodwork</span><strong>Timber doors and glazed panels</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Carpentry &amp; Installations">
+        <a href="images/shop-shelving.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Shelving installed in a shop">
+          <img src="images/shop-shelving.jpg" alt="Shelving installed in a shop" loading="lazy">
+        </a>
+        <figcaption><span>Carpentry &amp; Installations</span><strong>Shelving installation</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Hedge Cutting">
+        <a href="images/garden-hedge-large.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Large garden hedge ready for trimming">
+          <img src="images/garden-hedge-large.jpg" alt="Large garden hedge ready for trimming" loading="lazy">
+        </a>
+        <figcaption><span>Hedge Cutting</span><strong>Large garden hedge</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Painting &amp; Woodwork">
+        <a href="images/timber-door-and-window.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Timber door and window frames beside brickwork">
+          <img src="images/timber-door-and-window.jpg" alt="Timber door and window frames beside brickwork" loading="lazy">
+        </a>
+        <figcaption><span>Painting &amp; Woodwork</span><strong>Timber door and window frames</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Hedge Cutting">
+        <a href="images/garden-hedge-long.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Long garden hedge along a lawn">
+          <img src="images/garden-hedge-long.jpg" alt="Long garden hedge along a lawn" loading="lazy">
+        </a>
+        <figcaption><span>Hedge Cutting</span><strong>Long garden hedge</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Gardening &amp; Stonework">
+        <a href="images/stone-wall-and-hedge.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Trimmed hedge above a stone garden wall">
+          <img src="images/stone-wall-and-hedge.jpg" alt="Trimmed hedge above a stone garden wall" loading="lazy">
+        </a>
+        <figcaption><span>Gardening &amp; Stonework</span><strong>Hedge above a stone garden wall</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Landscaping">
+        <a href="images/gravel-garden-path.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Curved gravel path with lawn edging">
+          <img src="images/gravel-garden-path.jpg" alt="Curved gravel path with lawn edging" loading="lazy">
+        </a>
+        <figcaption><span>Landscaping</span><strong>Curved gravel garden path</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Repairs &amp; Restoration">
+        <a href="images/stone-wall-repair-closeup.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Close-up of a damaged stone garden wall being repaired">
+          <img src="images/stone-wall-repair-closeup.jpg" alt="Close-up of a damaged stone garden wall being repaired" loading="lazy">
+        </a>
+        <figcaption><span>Repairs &amp; Restoration</span><strong>Stone wall repair in progress</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Fencing &amp; Painting">
+        <a href="images/charcoal-timber-fence.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Charcoal painted timber fence and gate">
+          <img src="images/charcoal-timber-fence.jpg" alt="Charcoal painted timber fence and gate" loading="lazy">
+        </a>
+        <figcaption><span>Fencing &amp; Painting</span><strong>Charcoal painted timber fence and gate</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Landscaping">
+        <a href="images/garden-path-edging.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Garden path edging through grass">
+          <img src="images/garden-path-edging.jpg" alt="Garden path edging through grass" loading="lazy">
+        </a>
+        <figcaption><span>Landscaping</span><strong>Garden path edging</strong></figcaption>
+      </figure>
+      <figure class="gallery-card" data-category="Patios &amp; Outdoor Spaces">
+        <a href="images/patio-seating-area.jpg" target="_blank" rel="noopener" aria-label="Open larger photo: Patio seating area with wooden garden furniture">
+          <img src="images/patio-seating-area.jpg" alt="Patio seating area with wooden garden furniture" loading="lazy">
+        </a>
+        <figcaption><span>Patios &amp; Outdoor Spaces</span><strong>Patio seating area</strong></figcaption>
+      </figure>
+</div>
+<p class="note">Photos are examples of completed or in-progress work. Before-and-after pairs have not been labelled unless the same project can be confirmed.</p>
+</div></section>
+<section id="about"><div class="wrap about-grid">
+<div class="gold-panel"><strong>Reliable<br>practical help.</strong><span>For property and garden jobs in Bognor Regis.</span></div>
+<div><div class="eyebrow">Tomasz Slomka</div><h2>One call for a variety of <span>jobs.</span></h2>
+<p class="muted">Whether you need help in the garden, fencing repaired, a room painted, a timber project completed or an item collected and delivered, get in touch to talk through the job.</p>
+<ul class="ticks"><li>Gardening and hedge cutting</li><li>Fencing, gates and painting</li><li>Carpentry and installations</li><li>Patios, paths and landscaping</li><li>Property repairs and delivery help</li></ul>
+<div class="actions"><a class="button" href="tel:07743999057">Discuss Your Job</a></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid">
+<div><div class="eyebrow">Get in touch</div><h2>Need a hand with a <span>job?</span></h2><p class="muted">Call or email to discuss your requirements and ask for a quote.</p>
+<div class="contact-list">
+<a class="contact-item" href="tel:07743999057"><span>☎</span><div><b>Phone</b><span>07743 999057</span></div></a>
+<a class="contact-item" href="mailto:tomaszslomka269@gmail.com"><span>✉</span><div><b>Email</b><span>tomaszslomka269@gmail.com</span></div></a>
+<div class="contact-item"><span>⌖</span><div><b>Location</b><span>Bognor Regis, West Sussex</span></div></div>
+</div></div>
+<div class="contact-box"><h3>Request a quote</h3><p>Send an email with a short description of the job, your location and the best way to contact you.</p>
+<a class="button" href="mailto:tomaszslomka269@gmail.com?subject=Quote%20Request%20-%20Tomasz%20Slomka&amp;body=Hello%20Tomasz%2C%0A%0AI%20would%20like%20to%20ask%20about%3A%0A%0ALocation%3A%0APreferred%20contact%20method%3A%0A%0AThank%20you.">Email for a Quote</a>
+<p style="font-size:.82rem;margin-top:18px">For the quickest response, you can also call directly.</p></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Tomasz Slomka Property &amp; Garden Services</span><span>Bognor Regis, West Sussex</span></div></footer>
+</body></html>
